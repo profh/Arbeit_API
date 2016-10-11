@@ -11,6 +11,9 @@ gem 'sqlite3', '1.3.9'
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '3.1.7'
 
+# Using ActiveModelSerializers for serialization
+gem 'active_model_serializers', '0.9.5'
+
 # Other gems used by the project
 gem 'will_paginate', '3.0.5'
 gem 'chronic', '0.10.2'
