@@ -36,6 +36,19 @@ class User < ActiveRecord::Base
     last_name + ", " + first_name
   end
 
+  # *** ADDING THE AUTH TOKEN ***
+  # for demo, initially the token is set to nil...
+  # def auth_token
+  #   nil
+  # end
+
+  # really want it as a callback...
+  before_create :generate_auth_token
+
+  def generate_auth_token
+    self.auth_token = SecureRandom.hex
+  end
+
   # for use in authorizing with CanCan
   ROLES = [['Administrator', :admin],['Member', :member]]
 
