@@ -5,7 +5,7 @@ This repo contains an example covered in 67-442 of how to build basic APIs with 
 
 1. Master -- this is the most basic Rails API we can build for the Arbeit project.  It was created using the [rails-api](https://github.com/rails-api/rails-api) gem.
 
-1. Serialization -- this branch uses the [active_model_serializers](https://github.com/rails-api/active_model_serializers) gem to make the json generated more customized to our particular needs.
+1. Serialization -- this branch uses the [active_model_serializers](https://github.com/rails-api/active_model_serializers) gem to make it easy to serialize the data in an object and generate json more customized to our particular needs.  This project uses version 0.9.5 of this gem.
 
 1. Authentication -- this branch has examples of both basic authentication and token-based authentication for the Arbeit API.  Key methods from ActionController are [authenticate_with_http_basic](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic/ControllerMethods.html) and [authenticate_with_http_token](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token/ControllerMethods.html).
 
