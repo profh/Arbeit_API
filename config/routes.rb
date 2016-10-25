@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
+
+  # Routes for main resources
   resources :tasks, except: [:new, :edit]
   resources :assignments, except: [:new, :edit]
   resources :users, except: [:new, :edit]
   resources :projects, except: [:new, :edit]
   resources :domains, except: [:new, :edit]
-  # Routes for main resources
-  resources :domains
-  resources :projects
-  resources :tasks
-  resources :assignments
-  resources :users
   resources :sessions
   
   # Authentication routes
